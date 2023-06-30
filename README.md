@@ -16,6 +16,8 @@ Import the package in your Python script as follows:
 
 ```python
 import drmmsdk
+
+drmm = drmmsdk(api_key="your_api_key", api_secret="your_api_secret", server="your_server")
 ```
 
 ## Methods
