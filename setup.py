@@ -12,7 +12,7 @@ with open(os.path.join(this_directory, "requirements.txt")) as f:
 
 setup(
     name="drmmsdk",
-    version="0.0.2",
+    version="0.0.3",
     description="Datto RMM Unofficial Python SDK",
     long_description=long_description,
     long_description_content_type="text/markdown",
