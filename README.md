@@ -1,3 +1,4 @@
+[![GitHub](https://img.shields.io/badge/GitHub-Sponsor%20My%20Development-blue?logo=github&style=plastic)](https://github.com/sponsors/Josh-XT)
 # Datto RMM Unofficial Python SDK
 
 This is an unofficial Python SDK for Datto RMM. It was created to provide a Python interface for interacting with the Datto RMM API.
