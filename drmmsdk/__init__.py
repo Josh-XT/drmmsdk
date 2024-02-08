@@ -7,15 +7,15 @@ class drmmsdk:
     def __init__(self, api_key: str, api_secret: str, server: str = "concord"):
         if not api_key or not api_secret:
             raise ValueError("API key and secret are required")
-        base_uri = f"https://{server}-api.centrastage.net"
+        self.base_uri = f"https://{server}-api.centrastage.net"
         auth = {
             "type": "oauth_basic",
-            "auth_uri": f"{base_uri}/auth/oauth/token",
+            "auth_uri": f"{self.base_uri}/auth/oauth/token",
             "username": api_key,
             "password": api_secret,
             "server": server,
         }
-        self.session = get_session(auth)
+        self.session = get_session(**auth)
         self.commands = {
             "Datto RMM - Create site": self.create_site,
             "Datto RMM - Create site variable": self.create_site_variable,
