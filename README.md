@@ -1,4 +1,3 @@
-[![GitHub](https://img.shields.io/badge/GitHub-Sponsor%20My%20Development-blue?logo=github&style=plastic)](https://github.com/sponsors/Josh-XT)
 # Datto RMM Unofficial Python SDK
 
 This is an unofficial Python SDK for Datto RMM. It was created to provide a Python interface for interacting with the Datto RMM API.
@@ -13,10 +12,10 @@ pip install drmmsdk
 
 ## Usage
 
-Import the package in your Python script as follows:
+Initialize the SDK by providing your API key, API secret, and server. You can find your API key and API secret in the Datto RMM dashboard. The server is the URL of your Datto RMM instance, such as `concord`, `vidal,`, `zinfandel`, `merlot`, `pinotage`, or `syrah`.
 
 ```python
-import drmmsdk
+from drmmsdk import drmmsdk
 
 drmm = drmmsdk(api_key="your_api_key", api_secret="your_api_secret", server="your_server")
 ```
@@ -68,6 +67,5 @@ The SDK currently supports the following methods:
 41. `fetch_site_records()`: Fetches site records.
 42. `get_devices()`: Gets devices.
 43. `fetch_components()`: Fetches components.
-
 
 Please note that this is an unofficial SDK and is not endorsed by Datto. Always ensure that you're following all relevant policies and guidelines when interacting with the Datto RMM API.
