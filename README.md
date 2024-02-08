@@ -38,7 +38,7 @@ The SDK currently supports the following methods:
 12. `delete_site_proxy_settings()`: Deletes site proxy settings.
 13. `set_device_warranty()`: Sets device warranty.
 14. `set_device_udf()`: Sets device UDF.
-15. `unMuteAlert()`: Unmutes an alert.
+15. `unmute_alert()`: Unmutes an alert.
 16. `resolve_alert()`: Resolves an alert.
 17. `mute_alert()`: Mutes an alert.
 18. `update_account_variable()`: Updates an account variable.

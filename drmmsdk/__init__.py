@@ -31,7 +31,7 @@ class drmmsdk:
             "Datto RMM - Delete site proxy settings": self.delete_site_proxy_settings,
             "Datto RMM - Set device warranty": self.set_device_warranty,
             "Datto RMM - Set device udf": self.set_device_udf,
-            "Datto RMM - Unmutealert": self.unMuteAlert,
+            "Datto RMM - Unmutealert": self.unmute_alert,
             "Datto RMM - Resolve alert": self.resolve_alert,
             "Datto RMM - Mute alert": self.mute_alert,
             "Datto RMM - Update account variable": self.update_account_variable,
@@ -365,7 +365,7 @@ class drmmsdk:
         except Exception as e:
             return {"error": str(e)}
 
-    async def unMuteAlert(self, alertUid):
+    async def unmute_alert(self, alertUid):
         try:
             url = f"{self.base_uri}/v2/alert/{alertUid}/unmute"
             response = await self.session.post(url)
